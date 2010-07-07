@@ -15,8 +15,8 @@ For example, if you want your hook to be named "post-commit" then you
 would access it using the URL above, and have something similar in your
 commands.yml file:
 
-  <tt>post-commit:
-    Update Code: svn update /var/www/my_app</tt>
+  post-commit:
+    Update Code: svn update /var/www/my_app
 
 == Configuration
 
