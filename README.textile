@@ -18,11 +18,13 @@ commands.yml file:
   post-commit:
     Update Code: svn update /var/www/my_app
 
-== Configuration
+h2. Configuration
+
 Update commands.yml with the commands that you want to run at each
 hook call. See that file for instructions.
 
-== Startup
+h2. Startup
+
 CImple is a Sinatra app so you start it the same way:
 
   ruby cimple.rb
