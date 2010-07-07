@@ -27,10 +27,10 @@ hook call. See that file for instructions.
 
 CImple is a Sinatra app so you start it the same way:
 
-  ruby cimple.rb@
+  ruby cimple.rb
   
 By default cimple will log to STDOUT. To log to a file instead, include
 its path when you start:
 
-  ruby cimple.rb /var/log/cimple.log@
+  ruby cimple.rb /var/log/cimple.log
   
