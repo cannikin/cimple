@@ -1,0 +1,7 @@
+post-commit:
+  - Update Code: svn update /Users/rob/Sites/riddlekeeper
+  - Test Suite: rake -f /Users/rob/Sites/riddlekeeper/Rakefile test
+  
+pre-commit:
+  - Get Info: svn info /Users/rob/Sites/riddlekeeper
+  
