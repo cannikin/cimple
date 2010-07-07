@@ -1,6 +1,8 @@
-<h1>Cimple: Last run <%= distance_of_time_in_words @run_at %> ago (<%= @run_at.strftime '%d %B %Y %I:%m%p' %>)</h1>
+<h1>CImple</h1>
+<h2><%= @output.keys.first %>: Last run <%= distance_of_time_in_words @run_at %> ago (<%= @run_at.strftime '%d %B %Y %I:%m%p' %>)</h2>
 <hr>
-<% @output.each do |output| %>
-  <h3><%= output.keys.first %></h3>
-  <pre><%= output.values.first %></pre>
+<% @output.values.first.each do |output| %>
+  <h2><%= output.keys.first %></h2>
+  <pre class="good"><%= output.values.first['stdout'] %></pre>
+  <pre class="bad"><%= output.values.first['stderr'] %></pre>
 <% end %>

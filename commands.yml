@@ -12,6 +12,7 @@
 post-commit:
   - Update Code: svn update /Users/rob/Sites/vickies
   - Test Suite: rake -f /Users/rob/Sites/vickies/Rakefile test
+  - List Directory: ls -la /Users/rob/Sites/cimple
   
 pre-commit:
   - Get Info: svn info /Users/rob/Sites/riddlekeeper

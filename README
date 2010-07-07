@@ -1,5 +1,5 @@
 CImple is pretty much the simplest continuous integration system you
-could ask for. It is a Sinatra application that responds to only a
+could ask for. It is a Sinatra application and responds to only a
 couple of endpoints:
 
 http://domain.com:4567/
@@ -11,6 +11,24 @@ http://domain.com:4567/post-commit
 Any endpoint other than / is the name of a hook. This same name should
 be present at the top level of your commands.yml file.
 
+For example, f you want your hook to be named "post-commit" then you 
+would access it using the URL above, and have something similar in your
+commands.yml file:
+
+  post-commit:
+    Update Code: svn update /var/www/my_app
+
 == Configuration
 Update commands.yml with the commands that you want to run at each
 hook call. See that file for instructions.
+
+== Startup
+CImple is a Sinatra app so you start it the same way:
+
+  ruby cimple.rb
+  
+By default cimple will log to STDOUT. To log to a file instead, include
+its path when you start:
+
+  ruby cimple.rb /var/log/cimple.log
+  
