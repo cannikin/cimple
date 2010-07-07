@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'sinatra'
 require 'logger'
+require 'yaml'
 require 'open3'
-require 'helpers.rb'
+require File.open(File.join(File.dirname(File.expand_path(__FILE__)),'helpers.rb')
 
 configure do
   set :logger, Logger.new(ARGV[1] || STDOUT)
