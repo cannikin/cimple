@@ -1,0 +1,11 @@
+# Define the commands to be run when each hook is executed:
+#
+# hook-name:
+#   - Task Title: task command
+#
+# Example:
+# 
+# post-commit:
+#   - Update Code: svn update /var/www/my_app
+#   - Test Suite: rake -f /var/www/my_app/Rakefile test
+
