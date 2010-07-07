@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'logger'
 require 'open3'
-require 'helpers'
+require 'helpers.rb'
 
 configure do
   set :logger, Logger.new(ARGV[1] || STDOUT)
