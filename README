@@ -1,0 +1,16 @@
+CImple is pretty much the simplest continuous integration system you
+could ask for. It is a Sinatra application that responds to only a
+couple of endpoints:
+
+http://domain.com:4567/
+
+Shows you the results of the last hook run. 
+
+http://domain.com:4567/post-commit
+
+Any endpoint other than / is the name of a hook. This same name should
+be present at the top level of your commands.yml file.
+
+== Configuration
+Update commands.yml with the commands that you want to run at each
+hook call. See that file for instructions.

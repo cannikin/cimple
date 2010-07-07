@@ -1,0 +1,6 @@
+<h1>Cimple: Last run <%= distance_of_time_in_words @run_at %> ago (<%= @run_at.strftime '%d %B %Y %I:%m%p' %>)</h1>
+<hr>
+<% @output.each do |output| %>
+  <h3><%= output.keys.first %></h3>
+  <pre><%= output.values.first %></pre>
+<% end %>
