@@ -11,12 +11,12 @@ http://domain.com:4567/post-commit
 Any endpoint other than / is the name of a hook. This same name should
 be present at the top level of your commands.yml file.
 
-For example, f you want your hook to be named "post-commit" then you 
+For example, if you want your hook to be named "post-commit" then you 
 would access it using the URL above, and have something similar in your
 commands.yml file:
 
-  post-commit:
-    Update Code: svn update /var/www/my_app@
+  <tt>post-commit:
+    Update Code: svn update /var/www/my_app</tt>
 
 == Configuration
 
