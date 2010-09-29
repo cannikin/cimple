@@ -9,6 +9,7 @@ configure do
   set :logger, Logger.new(ARGV[1] || STDOUT)
   set :commands, YAML.load(File.open(File.join(File.dirname(File.expand_path(__FILE__)),'commands.yml')))
   set :last_run, File.join(File.dirname(File.expand_path(__FILE__)),'last_run.yml')
+  set :views, File.join(File.dirname(__FILE__), 'views')
 end
 
 # show output of latest run
